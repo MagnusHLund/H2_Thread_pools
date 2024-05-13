@@ -1,0 +1,7 @@
+C:\Users\magnu\source\repos\H2_Thread_pools\H2_Thread_pools\H2_Thread_pools\obj\Debug\H2_Thread_pools.csproj.AssemblyReference.cache
+C:\Users\magnu\source\repos\H2_Thread_pools\H2_Thread_pools\H2_Thread_pools\obj\Debug\H2_Thread_pools.csproj.CoreCompileInputs.cache
+C:\Users\magnu\source\repos\H2_Thread_pools\H2_Thread_pools\H2_Thread_pools\bin\Debug\H2_Thread_pools.exe.config
+C:\Users\magnu\source\repos\H2_Thread_pools\H2_Thread_pools\H2_Thread_pools\bin\Debug\H2_Thread_pools.exe
+C:\Users\magnu\source\repos\H2_Thread_pools\H2_Thread_pools\H2_Thread_pools\bin\Debug\H2_Thread_pools.pdb
+C:\Users\magnu\source\repos\H2_Thread_pools\H2_Thread_pools\H2_Thread_pools\obj\Debug\H2_Thread_pools.exe
+C:\Users\magnu\source\repos\H2_Thread_pools\H2_Thread_pools\H2_Thread_pools\obj\Debug\H2_Thread_pools.pdb
