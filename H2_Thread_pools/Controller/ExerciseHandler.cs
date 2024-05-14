@@ -53,10 +53,14 @@ namespace H2_Thread_pools.Controller
 		/// </summary>
 		private void Reset()
 		{
-			Thread.Sleep(50000);
+			Thread.Sleep(2000);
 			view.Clear();
 		}
 
+		/// <summary>
+		/// This method is responsible for creating a thread pools.
+		/// It assigns a thread to Task1() and Task2() inside ExerciseZero
+		/// </summary>
 		private void ExerciseZero()
 		{
 			ExerciseZero exerciseZero = new ExerciseZero();
@@ -73,20 +77,31 @@ namespace H2_Thread_pools.Controller
 			}
 		}
 
+		/// <summary>
+		/// Calls the entry point for ExerciseOne
+		/// </summary>
 		private void ExerciseOne()
 		{
 			ExerciseOne exerciseOne = new ExerciseOne();
 			exerciseOne.Start();
 		}
 
+		/// <summary>
+		/// Calls the entry point for ExerciseTwo
+		/// </summary>
 		private void ExerciseTwo()
 		{
-
+			ExerciseTwo exerciseTwo = new ExerciseTwo();	
+			exerciseTwo.Start();
 		}
 
+		/// <summary>
+		/// Calls the entry point for ExterciseThree
+		/// </summary>
 		private void ExerciseThree()
 		{
-
+			ExerciseThree exerciseThree = new ExerciseThree();
+			exerciseThree.Start();
 		}
 	}
 }

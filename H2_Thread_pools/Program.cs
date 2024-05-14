@@ -9,6 +9,9 @@ namespace H2_Thread_pools
 {
 	internal class Program
 	{
+		/// <summary>
+		/// Calls the controller called ExerciseHandler, at the entry point method.
+		/// </summary>
 		static void Main()
 		{
 			new ExerciseHandler().HandleExercises();

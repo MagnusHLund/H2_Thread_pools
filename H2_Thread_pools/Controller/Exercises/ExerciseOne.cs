@@ -13,14 +13,21 @@ namespace H2_Thread_pools.Controller.Exercises
 		private delegate void ProcessDelegate();
 		private static readonly View.View View = new View.View();
 
+		/// <summary>
+		/// Entry point for the ExerciseOne class.
+		/// Calls the HandleStopWatch method, with other methods as parameters.
+		/// </summary>
 		internal void Start()
 		{
-			Stopwatch stopwatch = new Stopwatch();
-
 			HandleStopWatch(ProcessWithThreadMethod);
 			HandleStopWatch(ProcessWithThreadPoolMethod);
 		}
 
+		/// <summary>
+		/// Keeps track of the time used, to finish the execution in the parameter method.
+		/// The time used gets printed to the console.
+		/// </summary>
+		/// <param name="process"></param>
 		private void HandleStopWatch(ProcessDelegate process)
 		{
 			Stopwatch stopwatch = new Stopwatch();
@@ -34,6 +41,9 @@ namespace H2_Thread_pools.Controller.Exercises
 
 		}
 
+		/// <summary>
+		/// Loops through a for-loop, 11 times, calling the Process method using new threads.
+		/// </summary>
 		private static void ProcessWithThreadMethod()
 		{
 			int repeatLoop = 11;
@@ -45,6 +55,9 @@ namespace H2_Thread_pools.Controller.Exercises
 			}
 		}
 
+		/// <summary>
+		/// Calls Process() 11 times, using thread pools. 
+		/// </summary>
 		private static void ProcessWithThreadPoolMethod()
 		{
 			int repeatLoop = 11;
@@ -55,6 +68,14 @@ namespace H2_Thread_pools.Controller.Exercises
 			}
 		}
 
+		/** 
+		* Answer to question in the assignment:
+		* The Process needs an object as a parameter, because QUeueUserWorkItem calls the method as a delegate.
+		*/
+
+		/// <summary>
+		/// This method is empty, due to measuring performance. 
+		/// </summary>
 		private static void Process(object obj)
 		{
 		}
